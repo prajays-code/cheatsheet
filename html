@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="styles.css">    
+    <title>Developer Cheat Sheet</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Merriweather:ital,wght@0,400;1,400&family=Work+Sans:wght@400;500;800&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <header>
+      <h1> HTML & CSS reference hub</h1>
+    </header>
+    <main>
+      <section id="html-ref">
+        <h2>HTML Reference Table</h2>
+        <p>This table focuses on the structural elements and essential attributes you'll use most often.</p>
+        <table class="html-table">
+          <thead>
+            <tr>
+              <th scope='col'>Topic</th>
+              <th scope='col'>Key Elements</th>
+              <th scope='col'>Purpose</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Semantic Layout</td>
+              <td><code>&lt;header&gt;</code>, <code>&lt;nav&gt;</code>, <code>&lt;main&gt;</code>, <code>&lt;section&gt;</code>, <code>&lt;footer&gt;</code></td>
+              <td>Defines the meaning of page regions for SEO and screen readers.</td>
+            </tr>
+            <tr>
+              <td>Forms & Inputs</td>
+              <td><code>&lt;form&gt;</code>, <code>&lt;input&gt;</code>, <code>&lt;label&gt;</code>, <code>&lt;select&gt;</code>, <code>&lt;button&gt;</code></td>
+              <td>Handles user data. Remember: <code>type="email"</code>, <code>type="password"</code>, and <code>type="submit"</code>.</td>
+            </tr>
+            <tr>
+              <td>Media & Metadata</td>
+              <td><code>&lt;img&gt;</code>, <code>&lt;a&gt;</code>, <code>&lt;link&gt;</code>, <code>&lt;meta&gt;</code>, <code>&lt;alt=''&gt;</code></td>
+              <td>Used for linking external resources (CSS/Fonts) and adding images with descriptive text.</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+      <section id="css-ref">
+        <h2>CSS Reference Table</h2>
+        <p>This table covers the "logic" of styling and positioning.</p>
+        <table class="css-table">
+          <thead>
+            <tr>
+              <th scope='col'>Topic</th>
+              <th scope='col'>Essential Properties</th>
+              <th scope='col'>Why It Matters</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>The Box Model</td>
+              <td><code>padding</code>, <code>border</code>, <code>margin</code>, <code>box-sizing</code></td>
+              <td>Controls space. <code>border-box</code> ensures padding doesn't break your layout width.</td>
+            </tr>
+            <tr>
+              <td>Flexbox Aligner</td>
+              <td><code>justify-content</code>, <code>align-items</code>, <code>flex-direction</code></td>
+              <td>The modern way to center items and create responsive rows or columns.</td>
+            </tr>
+            <tr>
+              <td>Variables & Type</td>
+              <td><code>--variable-name</code>, <code>font-family</code>, <code>@font-face</code></td>
+              <td>Keeps code "DRY" (Don't Repeat Yourself) and manages custom font files.</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+    </main>
+    <footer>
+      <p class="signature">Designed & Built by <strong>Prajay Sivadasan</strong></p>
+    <p class="copyright">&copy; 2026 | Reference Hub Project</p>
+    </footer>
+  </body>
+</html>
