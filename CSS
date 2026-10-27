@@ -1,0 +1,116 @@
+/* 2. Enhanced Color Palette */
+:root {
+  --html-accent: #10b981;    /* Emerald Green */
+  --css-accent: #8b5cf6;     /* Modern Violet */
+  --header-dark: #1e293b;    /* Slate Blue-Black */
+  --bg-soft: #f8fafc;        /* Cool Off-white */
+  --text-main: #334155;
+  --code-bg: red;        /* Soft red for code tags */
+  --code-text: #991b1b;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Work Sans', sans-serif;
+  margin: 0;
+  background-color: white;
+  color: var(--text-dark);
+  line-height: 1.6;
+}
+
+/* 3. Typography */
+h1 {
+  font-family: 'Abril Fatface', serif;
+  font-size: 3rem;
+  text-align: center;
+  margin: 40px 0;
+  color: var(--text-dark);
+}
+
+h2 {
+  font-family: 'Abril Fatface', serif;
+  border-bottom: 3px solid;
+  padding-bottom: 10px;
+}
+
+/* 4. Main Layout Grid */
+main {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Two columns side-by-side */
+  gap: 40px;
+  padding: 20px;
+}
+
+/* Responsive: Stack columns on smaller screens */
+@media (max-width: 800px) {
+  main {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* 5. Section Themes */
+#html-ref h2 { border-color: var(--html-accent); color: var(--html-accent); }
+#css-ref h2 { border-color: var(--css-accent); color: var(--css-accent); }
+
+/* 6. Table Styling */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+  border-radius: 8px;
+  overflow: hidden; /* Clips corners of cells to match border-radius */
+  box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+}
+
+th, td {
+  padding: 15px;
+  text-align: left;
+  border-bottom: 1px solid #eee;
+}
+
+th {
+  background-color: #fdfdfd;
+  font-weight: 800;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  letter-spacing: 1px;
+}
+
+td {
+  font-family: 'Merriweather', serif;
+  font-size: 0.95rem;
+}
+
+code {
+  background-color: #f1f1f1;
+  padding: 2px 6px;
+  border-radius: 4px;
+  color: #d63031;
+  font-size: 0.85rem;
+}
+
+/* 7. Footer */
+footer {
+  margin-top: 60px;
+  padding: 40px;
+  background-color: var(--text-dark);
+  color: white;
+  text-align: center;
+  font-family: "Croissant One", cursive;
+}
+
+.signature {
+  font-size: 1.4rem;
+  margin-bottom: 5px;
+}
+
+.copyright {
+  font-family: 'Work Sans', sans-serif;
+  opacity: 0.6;
+  font-size: 0.8rem;
+}
